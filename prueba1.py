@@ -1,41 +1,10 @@
-lista_numeros = [1,2,3,4,5,6]
-
-import random
-
-def lanzar_moneda():
+def lista_atributos(**kwargs):
     
-    resultado = random.choice(["Cara","Cruz"])
-    return resultado
-
-moneda = lanzar_moneda()
-
-def probar_suerte(moneda,lista):
+    lista_valor = []
     
-    if moneda == "Cara":
-        print("La lista se autodestruirá")
+    for valor in kwargs.values():
+        lista_valor.append(valor)
         
-        return []
-    
-    elif moneda == "Cruz":
-        print("La lista fue salvada")
-        
-        return lista
+    return lista_valor
 
-resultado = probar_suerte(moneda,lista_numeros)
-
-print(resultado)
-        
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
+print(lista_atributos(x=2,y=1,z=3))
