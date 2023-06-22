@@ -1,0 +1,76 @@
+GUIA ADICIONAL DE GIT
+https://bluuweb.github.io/tutorial-github/01-fundamentos/#enlaces
+
+Iniciar GIT
++ git init
+
+
+Cambiar configuracion de nombre
++ git config -global user.name "Tu Nombre"
+
+
+Cambiar Configuracion de Correo
++ git config - global user.name "Email"
+
+
+Ver Estado del GIT
++ git status
+
+
+Preparar Archivos modificados/Agregados/Borrados
++ git add .
+
+
+Confirmar archivos preparados
++ git commit -m "Nombre de la version"
+
+
+Para subir el archivo a la rama principal
++ git branch -M main
+
+
+Para subir al repositorio remoto
++ Copiar el link que genera Github ( git remote add origin + la ruta )
+
+
+Para hacer efectiva la sincronizacion de mi local al remoto
++ git push -u origin main
+
+
+Para saber cual y cuando se realizo el commit
++ git log
+
+
+Para conocer los commit que se han hecho
++ git log --oneline
+
+
+Moverse en las diferentes ramas o versiones
++ git checkout (codigo de version)
+
+
+Volver a la rama principal o a la ultima version
++ git checkout master
+
+
+Muestra todas las ramas que existen
++ git branch
+
+
+Para crear la rama dev
++ git branch dev
+
+
+Para pasar a la rama dev y volver a la master
++ git chekout dev    /      + git checkout master
+
+Para unir las ramas 
++ git merge + (nombre de la rama)
+
+
+
+
+
+
+
+
